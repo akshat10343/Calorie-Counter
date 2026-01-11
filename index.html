@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calorie Counter Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Calorie Counter</h1>
+
+    <section class="controls">
+      <label for="q">Food description</label>
+      <input id="q" type="text" placeholder="e.g., ice cream, dip, chocolate" />
+      <div class="buttons">
+        <button id="searchBtn">Search</button>
+        <button id="clearBtn" class="secondary">Clear</button>
+      </div>
+      <p id="msg" class="msg" aria-live="polite"></p>
+    </section>
+
+    <section class="results">
+      <h2>Results (max 25)</h2>
+      <div id="resultsPanel" class="results-panel">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Food</th>
+              <th>Portion</th>
+              <th>Calories</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span id="status">Loading foods…</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

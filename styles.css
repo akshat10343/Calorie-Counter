@@ -1,0 +1,75 @@
+:root { font-family: system-ui, Arial, sans-serif; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  background: #f6f7fb;
+}
+
+.card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #e6e6ef;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+h1 { margin: 0 0 16px; }
+h2 { margin: 16px 0 8px; font-size: 1.1rem; }
+
+.controls label { display: block; margin-bottom: 6px; }
+.controls input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d6d6e6;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.buttons { display: flex; gap: 10px; margin-top: 10px; }
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #1f1f1f;
+  background: #1f1f1f;
+  color: white;
+  cursor: pointer;
+}
+button.secondary {
+  background: white;
+  color: #1f1f1f;
+}
+
+.msg { margin: 10px 0 0; min-height: 1.2em; }
+.msg.warn { color: #b45309; }
+.msg.error { color: #b91c1c; }
+.msg.ok { color: #166534; }
+
+.results-panel {
+  border: 1px solid #e6e6ef;
+  border-radius: 10px;
+  overflow: auto;
+  max-height: 420px;       /* makes it scrollable */
+  background: #fff;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.results-table th, .results-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f6;
+  vertical-align: top;
+}
+.results-table th {
+  position: sticky;
+  top: 0;
+  background: #fafafe;
+  z-index: 1;
+  text-align: left;
+}
+
+.footer { margin-top: 12px; color: #555; font-size: 0.95rem; }
